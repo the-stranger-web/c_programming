@@ -1,17 +1,18 @@
 #include <stdio.h>
 
-/*
-// [swapping two numbers by call by value]
+void swap_by_value(int, int);
+void swap__by_reference(int *, int *);
 
-void swap(int, int);
 void main()
 {
     int a,b;
     printf("Enter two numbers:\n");
     scanf("%d %d",&a,&b);
-    swap(a,b);
+    swap_by_value(a,b);
+    swap__by_reference(&a,&b);
 }
-void swap(int x, int y)
+
+void swap_by_value(int x, int y)
 {
     int temp;
     temp = x;
@@ -19,21 +20,8 @@ void swap(int x, int y)
     y = temp;
     printf("Value after swapping:\n%d %d",x,y);
 }
-*/
 
-
-/*
-// [swapping two numbers by call by reference]
-
-void swap(int *, int *);
-void main()
-{
-    int a,b;
-    printf("Enter two numbers:\n");
-    scanf("%d %d",&a,&b);
-    swap(&a,&b);
-}
-void swap(int *x, int *y)
+void swap__by_reference(int *x, int *y)
 {
     int temp;
     temp = *x;
@@ -41,4 +29,3 @@ void swap(int *x, int *y)
     *y = temp;
     printf("Value after swapping:\n%d %d",*x,*y);
 }
-*/
