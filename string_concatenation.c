@@ -1,6 +1,7 @@
 // [to concatenate two strings]
 
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -11,9 +12,7 @@ int main()
     printf("Enter second string:\n");
     scanf(" %s", str2);
 
-    i = 0;
-    while (str1[i] != '\0')
-        i++;
+    i = (int) strlen(str1);
 
     j = 0;
     while (str2[j] != '\0') {
