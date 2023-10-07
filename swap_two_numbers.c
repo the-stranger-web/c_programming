@@ -22,7 +22,7 @@ void swap(int x, int y)
 */
 
 
-/*
+
 // [swapping two numbers by call by reference]
 
 void swap(int *, int *);
@@ -41,4 +41,4 @@ void swap(int *x, int *y)
     *y = temp;
     printf("Value after swapping:\n%d %d",*x,*y);
 }
-*/
+
